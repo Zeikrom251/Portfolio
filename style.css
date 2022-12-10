@@ -353,8 +353,8 @@ h3 {
     height: 150px;
 }
 .dwn .button .hero-btn {
-    margin-left: 40.5%;
-    align-items: center;
+    display: block;
+    margin: auto;
     color: black;
     border: 1px solid black;
     font-size: 16px;
