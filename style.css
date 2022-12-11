@@ -352,16 +352,18 @@ h3 {
 .cv .sender-column a img {
     height: 150px;
 }
-.dwn .button .hero-btn {
-    display: block;
-    margin: auto;
+.dwn {
+    text-align: center;
+}
+.button .hero-btn {
+    display: inline-block;
     color: black;
     border: 1px solid black;
     font-size: 16px;
     background: transparent;
     cursor: pointer;
 }
-.dwn .button .hero-btn:hover {
+.button .hero-btn:hover {
     border: 1px solid white;
     color: white;
     background: #bfac00;
