@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---- Header ---->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <ion-icon name="close-outline" class="ion close-icon" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Project.html">PROJECTS</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <ion-icon name="menu-outline" class="ion menu-icon" onclick="showMenu()"></ion-icon>
+        </nav>
+
+        <h1>Fresnel</h1>
+    </section>
+
+
+    <!---- Projets de cours ---->
+    <section class="projects">
+        <h1>Fresnel Projects</h1>
+        <p>All the projects here are not finished, only simulations</p>
+
+        <div class="row">
+            <div class="hobbie-col">
+                <a href="https://youtu.be/Z2qbL1qGwzE" target="_blank"><img src="images/arduino-motor.jpg" title="Look the video"></a>
+                <h3><span class="blue">Arduino</span> Suitcase</h3>
+                <p>This is the last project I did on my last highschool year. 
+                The final product is a suitcase that we can ride to transit in the airports.
+                </p><br>
+                <a href="fresnelP/Suitecase.html" class="hero-btn-f" target="_blank">See code</a>
+            </div>
+            
+            <div class="hobbie-col">
+                <a href="https://youtu.be/RnRN-e3QYMQ" target="_blank"><img src="images/arduino-oled.jpg" title="Look the video"></a>
+                <h3><span class="blue">Arduino</span> Suitcase OLED part</h3>
+                <p>For this part, I used another simulation website that allow me to use Oled
+                   screen's as i wish. Because Tinkercad dosn't have oled screen's. 
+                </p><br>
+                <a href="fresnelP/speed_monitoring.html" class="hero-btn-f" target="_blank">See code</a>
+            </div>
+
+            <div class="hobbie-col">
+                <a href="https://youtu.be/IllOFpe2wWY" target="_blank"><img src="images/rangefinder.jpg" title="Look the video"></a>
+                <h3><span class="blue">Arduino</span> Rangefinder</h3>
+                <p>This Rangefinder was made during the COVID-19 epidemic, to keep the social
+                distance's between students. There two differents models.</p><br>
+                <a href="fresnelP/rangefinder.html" class="hero-btn-f" target="_blank">See code</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---- Footer ---->
+    <section class="footer">
+        <h4>Social media</h4>
+        <p>Here are some of my social media</p>
+        <div class="icons">
+            <a href="https://twitter.com/z3ikr0m__"><ion-icon name="logo-twitter"class="fa"></ion-icon></a>
+            <a href="https://www.instagram.com/z3ikr0m__/"><ion-icon name="logo-instagram"class="fa"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/ryan-chikhi-912333228/"><ion-icon name="logo-linkedin"class="fa"></ion-icon></a>
+        </div>
+        <p>Made with 
+            <ion-icon name="logo-html5" class="logo"></ion-icon>
+            <ion-icon name="logo-css3" class="logo"></ion-icon>
+            <ion-icon name="logo-javascript" class="logo"></ion-icon>
+             By Zeikrom</p>
+    </section>
+
+
+
+    
+    <!----Javascript for toggle Menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+         function showMenu() {
+             navLinks.style.right = "0";
+         }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!--Script IonIcons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
