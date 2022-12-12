@@ -484,7 +484,7 @@ h3 {
 }
 pre {
     min-width: 310px;
-    max-width: 450px;
+    max-width: 350px;
     height: 240px;
     display: flex;
     position: relative;
